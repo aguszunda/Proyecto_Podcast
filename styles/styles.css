@@ -1,0 +1,758 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    color:black;
+}
+
+header .title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 64px;
+    color: #060A24;
+    letter-spacing: 0;
+    opacity: 100%;
+    left: 50px;
+    font-weight:500;
+}
+
+header .text {
+    top: 120px;
+    left: 150px;
+}
+
+.text p {
+    width: 610px;
+    margin-left: 55px;
+    margin-top: 5px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px
+}
+
+.learn-more {
+    background: #00F3BB;
+    color: #060A24;
+    line-height: 24px;
+    padding: 16px 59px;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    top: 32px;
+    margin-left: 55px;
+}
+
+.logo {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.menu {
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.menu > ul {
+     list-style: none;
+     display: flex;
+     flex-flow: nowrap;
+     background: white;
+     grid-template-columns: 100px 100px 100px 100px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-left: 48px;
+}
+
+.sesgoDown {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(100% 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.sesgoUp {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 0%, 0% 100%);
+}
+
+.sesgoDownFinal {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(100% 10%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 64px;
+}
+
+.episodios {
+    width: 100%;
+    background-image: linear-gradient(to right, #0000FF 0%, #0000A3 100%);
+}
+
+.episodios label {
+    left: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.gris-episode {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 300px 300px;
+    font-display: auto;
+    flex-flow: nowrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.gris-episode iframe {
+    width: 584px;
+    height: 232px;
+    border: 0;
+}
+
+.phone {
+    display: grid;
+    grid-template-columns: 550px 550px;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-self: center;
+    margin-top: -200px;
+    padding-right: 101px;
+}
+
+.image-celphone {
+    width: 457.6px;
+    height: 660px;
+}
+
+.phone .phone-text {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.black-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    margin-left: 175px;
+    margin-top: 100px;
+    padding: 25px;
+    font-weight: 500;
+}
+
+.white-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: white;
+    letter-spacing: 0;
+    margin-left: 200px;
+    top: 30px;
+    font-weight: 500;
+}
+
+.texttitle {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color:#060A24;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.texttitle-p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+    width: 450px;
+}
+
+.phone-text-grid {
+    align-self: center;
+}
+
+.invited {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto;
+    font-display: auto;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+.invited img {
+    width: 100%;
+}
+
+.some-topics {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    margin-top: 25px;
+    color: #060A24;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.some-topics p {
+    width: 220px;
+    text-align: center;
+    margin-left: 28%;
+}
+
+.news {
+    width: 100%;
+    background-image: linear-gradient(to right, #0000FF 0%, #0000A3 100%);
+    height: 318px;
+}
+
+.news .white-title-last-news {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: white;
+    letter-spacing: 0;
+    text-align: center;
+    top: 30px;
+    font-weight: 500;
+}
+
+.new-episode {
+    background: #00F3BB;
+    color: #060A24;
+    padding: 16px 59px;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    top: 95px;
+}/*723295*/
+
+footer {
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+footer i {
+    width: 18px;
+    height: 28px;
+    font-size: 18px;
+    color: #060A24;
+    margin-left: 28px;
+}
+
+footer p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+/* ####################### ACCIONES ####################### */
+.menu ul li a:hover {
+    color: #00f3bb;
+    text-decoration: line-through;
+}
+
+.menu ul li a:active {
+    color: rgba(6,10,36, 0.56);
+    text-decoration: line-through;
+}
+
+.learn-more:hover {
+    color: white;
+    background-image: linear-gradient(to right, #00F0B8 0%,#0000FE 100%);
+}
+
+.new-episode:hover {
+    color: white;
+    background-image: linear-gradient(to right, #00F0B8 0%,#0000FE 100%);
+}
+/* #######################  RESPONSIVE ####################### */
+
+
+@media screen and (max-width:450px){
+    /* #######################  MENU RESPONSIVE ####################### */
+    .btn-hamburger, .btn-x, .btn-menu {
+        display: inline-block;
+    }
+
+    .btn-x {
+        opacity: 100%;
+    }
+
+    /*Este es el logo que se muestra por defecto.*/
+    .logo {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .btn-x, .btn-hamburger, .btn-menu {
+        position: absolute;
+        margin-left: 89%;
+        margin-top: 25px;
+    }
+
+    .btn-hamburger {
+        opacity: 100%;
+    }
+
+    .btn-x {
+        opacity: 0%;
+    }
+
+    .btn-menu {
+        opacity: 0%;       
+    }
+
+    .menu {
+        margin-top: 65px;
+        z-index: 1;
+        padding: 0px;
+        position: absolute;
+        margin-left: 120%;
+        background-color: #0000EC;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu  ul {
+        flex-direction: column;
+        margin-right: 65%;
+        background-color: #0000EC;
+    }
+
+    .menu li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    /* #######################  MENU CHECKED ####################### */
+
+    #btn-menu:checked ~ .menu {
+        margin-left: 0;
+    }
+    
+    #btn-menu:checked ~ .btn-hamburger {
+        opacity: 0%;
+    }
+
+    #btn-menu:checked ~ .btn-x {
+        opacity: 100%;
+    }
+
+    /* #######################  HEADER  ####################### */
+    header {
+        height: 400px;
+    }
+
+    header .text {
+        top: -45px;
+        left: -25px;
+    }
+
+    .text p {
+        width: 85%;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .learn-more {
+        line-height: 22px;
+        font-size: 16px;
+        padding: 16px 26%;
+        width: 287px;
+    }
+
+    .white-title {
+        font-size: 36px;
+        margin-left: 25px;
+        font-weight: 500;
+    }
+
+    header .title {
+        font-weight: 500;
+        line-height: 42px;
+        margin-top: 120px;
+        font-size: 36px;
+        width: 85%;
+    }
+
+    .sesgoUp {
+        height: 80px;
+    }
+
+    .episodios {
+        height: 1160px;
+    }
+
+    .gris-episode {
+        grid-template-columns: 300px;
+        grid-template-rows: 250px;
+    }
+
+    .gris-episode iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .phone {
+        display: grid;
+        grid-template-columns: 250px;
+        margin-top: -140px;
+    }
+
+    .image-celphone {
+        width: 350px;
+        height: 510px;
+    }
+    
+    .texttitle {
+        font-size: 36px;
+        size: 288px;
+        margin-left: 25px;
+    }
+
+    .texttitle-p {
+        margin-left: 25px;
+        font-size: 14px;
+        line-height: 22px;
+        width: 288px;
+    }
+
+    .black-title {
+        margin-left:0;
+        margin-top: 0;
+        font-size: 36px;
+        size: 288px;
+    }
+
+    .invited {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 100%;
+    }
+    
+    .some-topics {
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-rows: 25%;
+        text-align: center;
+        vertical-align: middle;
+        margin-left: 33%;
+    }
+
+    .some-topics img {
+        width: 104px;
+        height: 104px;
+    }
+    
+    .some-topics p {
+        width: 288px;
+        text-align: center;
+        margin-left: -92px;
+        margin-bottom: 70px;
+    }
+    
+    .sesgoDown {
+        height: 80px;
+    }
+
+    .sesgoDownFinal {
+        height: 80px;
+        margin-top: 0;
+    }
+    .news {
+        width: 100%;
+        background-image: linear-gradient(to right, #0000FF 0%, #0000A3 100%);
+        height: 280px;
+    }
+
+    .new-episode {
+        font-size: 16px;
+        top: 95px;
+        padding: 16px 55px;
+    }
+
+    .news .white-title-last-news {
+        font-size: 36px;
+    }
+
+    footer p {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width:950px){
+    /* #######################  MENU RESPONSIVE ####################### */
+    .btn-hamburger, .btn-x, .btn-menu {
+        display: inline-block;
+    }
+
+    .btn-x {
+        opacity: 100%;
+    }
+
+    /*Este es el logo que se muestra por defecto.*/
+    .logo {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .btn-x, .btn-hamburger, .btn-menu {
+        position: absolute;
+        margin-left: 93%;
+        margin-top: 25px;
+    }
+
+    .btn-hamburger {
+        opacity: 100%;
+    }
+
+    .btn-x {
+        opacity: 0%;
+    }
+
+    .btn-menu {
+        opacity: 0%;       
+    }
+
+    .menu {
+        margin-top: 65px;
+        z-index: 1;
+        padding: 0px;
+        position: absolute;
+        margin-left: 110%;
+        background-color: #0000EC;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu  ul {
+        flex-direction: column;
+        margin-right: 80%;
+        background-color: #0000EC;
+    }
+
+    .menu li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    /* #######################  MENU CHECKED ####################### */
+
+    #btn-menu:checked ~ .menu {
+        margin-left: 0;
+    }
+    
+    #btn-menu:checked ~ .btn-hamburger {
+        opacity: 0%;
+    }
+
+    #btn-menu:checked ~ .btn-x {
+        opacity: 100%;
+    }
+
+    /* #######################  HEADER  ####################### */
+    header {
+        height: 325px;
+    }
+
+    header .text {
+        top: -45px;
+        left: -25px;
+    }
+
+    .text p {
+        width: 85%;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .learn-more {
+        font-size: 16px;
+        padding: 16px 38%;
+    }
+
+    .white-title {
+        font-size: 36px;
+        margin-left: 25px;
+        font-weight: 500;
+    }
+
+    header .title {
+        font-weight: 500;
+        line-height: 42px;
+        margin-top: 120px;
+        font-size: 36px;
+        width: 85%;
+    }
+
+    .sesgoUp {
+        height: 80px;
+    }
+
+    .episodios {
+        height: 1160px;
+    }
+
+    .gris-episode {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px;
+    }
+
+    .gris-episode iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .phone {
+        display: grid;
+        grid-template-columns: 250px;
+        margin-top: -140px;
+    }
+
+    .image-celphone {
+        width: 350px;
+        height: 510px;
+    }
+    
+    .texttitle {
+        font-size: 36px;
+        size: 288px;
+        margin-left: 25px;
+    }
+
+    .texttitle-p {
+        margin-left: 25px;
+        font-size: 14px;
+        line-height: 22px;
+        width: 288px;
+    }
+
+    .black-title {
+        margin-left:0;
+        margin-top: 0;
+        font-size: 36px;
+        size: 288px;
+    }
+
+    .invited {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .some-topics {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .some-topics img {
+        width: 104px;
+        height: 104px;
+    }
+    
+    .some-topics p {
+        width: 288px;
+        text-align: center;
+        margin-left: 10%;
+        margin-bottom: 70px;
+    }
+    
+    .sesgoDown {
+        height: 80px;
+    }
+
+    .sesgoDownFinal {
+        height: 80px;
+        margin-top: 0;
+    }
+
+    .news {
+        width: 100%;
+        background-image: linear-gradient(to right, #0000FF 0%, #0000A3 100%);
+        height: 280px;
+    }
+
+    .new-episode {
+        font-size: 16px;
+        top: 95px;
+    }
+
+    .news .white-title-last-news {
+        font-size: 36px;
+    }
+}
+
+@media (min-width:950px){
+    .btn-hamburger, .btn-x, .btn-menu {
+        margin-left: -100%;
+    }
+}
+@media screen and (min-width:950px) and (max-width:130px){
+    .gris-episode {
+        justify-content: normal;
+    }
+}
+
+
+
+
+
